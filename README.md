@@ -1,3 +1,5 @@
+[![Manual and scheduled testing](https://github.com/Funyk/software-testing-kn42/actions/workflows/manual-testing.yml/badge.svg)](https://github.com/Funyk/software-testing-kn42/actions/workflows/manual-testing.yml)
+
 # Тестування програм та програмних комплексів
 
 **Костюк Артем, КН-42**

@@ -20,6 +20,21 @@
 
 [Перший запуск шаблону](https://github.com/Funyk/software-testing-kn42/actions/runs/43540733689) завершився кодом `5`, тому що в репозиторії ще не було тестів. Журнал `pytest` показав `collected 0 items`.
 
+### Результати
+
+| Запуск | Результат |
+| --- | --- |
+| [Python application](https://github.com/Funyk/software-testing-kn42/actions/runs/43541828276) | 118 тестів і 12 підтестів пройдено. Один навчальний тест позначено `skip`. Окрема перевірка `app.py` показала 100% при порозі 90%. |
+| [Ручний запуск з `name=Артем`](https://github.com/Funyk/software-testing-kn42/actions/runs/43541871473) | Завдання Bash і Python пройшли. Крок `Send greeting` вивів `Привіт, Артем!`. |
+
+Вираз `57 1 * * 6` перевірено в [CronTab Guru](https://crontab.guru/#57_1_*_*_6). Для GitHub Actions час у виразі задано в UTC.
+
+![Два workflow у вкладці Actions](pictures/workflows.png)
+
+![Результат двох завдань ручного запуску](pictures/manual-jobs.png)
+
+![Крок Send greeting із заданим іменем](pictures/manual-greeting.png)
+
 ---
 
 ### Висновок

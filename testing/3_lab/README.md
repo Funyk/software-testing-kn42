@@ -43,6 +43,10 @@ HTML показує виконані й пропущені рядки. У бра
 
 ![HTML-звіт coverage.py у браузері](pictures/coverage-html.png)
 
+У [GitHub Actions](https://github.com/Funyk/software-testing-kn42/actions/runs/43541828276) та сама перевірка пройшла 8 тестів і показала 100% покриття `app.py`, як і локальний запуск. Поріг 90% пройдено. GitHub зберіг [coverage-report](https://github.com/Funyk/software-testing-kn42/actions/runs/43541828276/artifacts/14091279734) з файлом `coverage.xml`.
+
+![Перевірка покриття в GitHub Actions](pictures/coverage-ci.png)
+
 ---
 
 ### Висновок
