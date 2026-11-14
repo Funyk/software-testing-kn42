@@ -8,8 +8,11 @@ on:
         type: string
         required: true
         default: Executer
-  schedule:
-    - cron: '53 2 * * 6'
+  # Одноразовий запуск за розкладом підтверджено 14.11.2026:
+  # https://github.com/Funyk/software-testing-kn42/actions/runs/43580808544
+  # За вимогою методички повторні запуски вимкнено; ручний запуск доступний.
+  # schedule:
+  #   - cron: '53 2 * * 6'
 
 permissions:
   contents: read
