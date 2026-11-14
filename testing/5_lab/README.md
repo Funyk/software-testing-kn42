@@ -31,6 +31,8 @@
 
 Вираз `17 2 * * 6` перевірено в [CronTab Guru](https://crontab.guru/#17_2_*_*_6). Для GitHub Actions час у виразі задано в UTC. [Перевірка виразу](pictures/cron-expression.png).
 
+14 листопада 2026 року перевірено два заплановані моменти, 01:57 та 02:17 UTC. Станом на 02:36 UTC [журнал GitHub Actions](https://github.com/Funyk/software-testing-kn42/actions/workflows/manual-testing.yml) показував успішний ручний запуск і ще не містив запуску з подією `schedule`.
+
 ![Два workflow у вкладці Actions](pictures/workflows.png)
 
 [Підсумок CI та артефакт покриття](pictures/ci-success.png) · [Журнал повного набору тестів](pictures/ci-tests.png)
