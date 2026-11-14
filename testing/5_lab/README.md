@@ -31,7 +31,7 @@
 
 Вираз `53 2 * * 6` перевірено в [CronTab Guru](https://crontab.guru/#53_2_*_*_6). Для GitHub Actions час у виразі задано в UTC. [Перевірка виразу](pictures/cron-expression.png).
 
-14 листопада 2026 року після двох запланованих моментів, 01:57 та 02:17 UTC, у [журналі GitHub Actions](https://github.com/Funyk/software-testing-kn42/actions/workflows/manual-testing.yml) була лише подія ручного запуску. Workflow повторно ввімкнено, а Cron оновлено через редактор GitHub.
+14 листопада 2026 року після двох запланованих моментів, 01:57 та 02:17 UTC, у [журналі GitHub Actions](https://github.com/Funyk/software-testing-kn42/actions/workflows/manual-testing.yml) була лише подія ручного запуску. Workflow повторно ввімкнено, а Cron оновлено через редактор GitHub. Після третього запланованого моменту, 02:53 UTC, станом на 03:01 UTC запису `schedule` також не було. Ручний запуск підтверджено, фактичний запуск за розкладом залишається непідтвердженим.
 
 ![Два workflow у вкладці Actions](pictures/workflows.png)
 
