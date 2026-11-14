@@ -1,0 +1,9 @@
+test_figure_length (__main__.TestFigure.test_figure_length) ... ok
+test_figure_type (__main__.TestFigure.test_figure_type) ... ok
+test_invalid_figure (__main__.TestFigure.test_invalid_figure) ... ok
+test_invalid_length (__main__.TestFigure.test_invalid_length) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

@@ -1,0 +1,8 @@
+$ poetry run python -m unittest -v test.TestFigure.test_figure_length
+
+test_figure_length (test.TestFigure.test_figure_length) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK

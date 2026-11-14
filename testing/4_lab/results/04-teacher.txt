@@ -1,0 +1,23 @@
+$ poetry run pytest -v
+
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <проєкт>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <проєкт>
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collecting ... collected 11 items
+
+test_app.py::test_create_task PASSED                                     [  9%]
+test_app.py::test_get_tasks PASSED                                       [ 18%]
+test_app.py::test_create_task_requires_title PASSED                      [ 27%]
+test_app.py::test_empty_list_export PASSED                               [ 36%]
+test_app.py::test_export_repairs_corrupt_json PASSED                     [ 45%]
+test_app.py::test_two_tasks_ordered_in_database PASSED                   [ 54%]
+test_app.py::test_invalid_post_leaves_database_and_file_unchanged[payload0] PASSED [ 63%]
+test_app.py::test_invalid_post_leaves_database_and_file_unchanged[payload1] PASSED [ 72%]
+test_app.py::test_invalid_post_leaves_database_and_file_unchanged[payload2] PASSED [ 81%]
+test_app.py::test_invalid_post_leaves_database_and_file_unchanged[payload3] PASSED [ 90%]
+test_app.py::test_delete_task_updates_database_and_file PASSED           [100%]
+
+============================== 11 passed in 0.12s ==============================

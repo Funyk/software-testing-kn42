@@ -1,0 +1,8 @@
+$ poetry run coverage report --fail-under=90
+
+Name     Stmts   Miss Branch BrPart  Cover
+------------------------------------------
+app.py      18      4      6      3    71%
+------------------------------------------
+TOTAL       18      4      6      3    71%
+Coverage failure: total of 71 is less than fail-under=90

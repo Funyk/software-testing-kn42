@@ -1,0 +1,27 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <проєкт>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <проєкт>
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collecting ... collected 17 items
+
+test_app.py::test_triangle_type PASSED                                   [  5%]
+test_app.py::test_allowed_figure[\u043a\u0432\u0430\u0434\u0440\u0430\u0442] PASSED [ 11%]
+test_app.py::test_allowed_figure[\u043f\u0440\u044f\u043c\u043e\u043a\u0443\u0442\u043d\u0438\u043a] PASSED [ 17%]
+test_app.py::test_allowed_figure[\u0442\u0440\u0438\u043a\u0443\u0442\u043d\u0438\u043a] PASSED [ 23%]
+test_app.py::test_square_length PASSED                                   [ 29%]
+test_app.py::test_invalid_figure PASSED                                  [ 35%]
+test_app.py::test_disallowed_types[\u043a\u043e\u043b\u043e] PASSED      [ 41%]
+test_app.py::test_disallowed_types[] PASSED                              [ 47%]
+test_app.py::test_disallowed_types[None] PASSED                          [ 52%]
+test_app.py::test_invalid_lengths[0] PASSED                              [ 58%]
+test_app.py::test_invalid_lengths[-1] PASSED                             [ 64%]
+test_app.py::test_invalid_lengths[-10] PASSED                            [ 70%]
+test_app.py::test_non_numeric_lengths[3] PASSED                          [ 76%]
+test_app.py::test_non_numeric_lengths[None] PASSED                       [ 82%]
+test_app.py::test_non_numeric_lengths[length2] PASSED                    [ 88%]
+test_app.py::test_fixture_contains_three_figures PASSED                  [ 94%]
+test_app.py::test_fixture_contains_rectangle PASSED                      [100%]
+
+============================== 17 passed in 0.04s ==============================

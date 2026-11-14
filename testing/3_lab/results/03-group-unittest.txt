@@ -1,0 +1,18 @@
+$ poetry run coverage run -m unittest discover -v
+
+test_branches_negative (tests.test_unittesting.TestNewFunction.test_branches_negative) ... ok
+test_branches_positive (tests.test_unittesting.TestNewFunction.test_branches_positive) ... ok
+test_branches_zero (tests.test_unittesting.TestNewFunction.test_branches_zero) ... ok
+test_handler_prints_start_and_finish (tests.test_unittesting.TestNewFunction.test_handler_prints_start_and_finish) ... ok
+test_if_only_branch (tests.test_unittesting.TestNewFunction.test_if_only_branch) ... ok
+test_if_only_branch_non_positive (tests.test_unittesting.TestNewFunction.test_if_only_branch_non_positive) ... ok
+test_main_combines_results (tests.test_unittesting.TestNewFunction.test_main_combines_results) ... ok
+test_missing_new_2_and_4 (tests.test_unittesting.TestNewFunction.test_missing_new_2_and_4) ... ok
+test_new_3 (tests.test_unittesting.TestNewFunction.test_new_3) ... ok
+test_new_function (tests.test_unittesting.TestNewFunction.test_new_function) ... ok
+test_new_none (tests.test_unittesting.TestNewFunction.test_new_none) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.036s
+
+OK

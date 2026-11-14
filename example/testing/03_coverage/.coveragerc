@@ -1,0 +1,11 @@
+[run]
+source = app
+branch = true
+relative_files = true
+
+[report]
+omit =
+    test_*.py
+    */tests/*
+    */__init__.py
+    */.venv/*

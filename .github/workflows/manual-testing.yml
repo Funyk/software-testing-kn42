@@ -1,0 +1,38 @@
+name: Manual and scheduled testing
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Ім’я для привітання
+        type: string
+        required: true
+        default: Executer
+  schedule:
+    - cron: '57 1 * * 6'
+
+permissions:
+  contents: read
+
+jobs:
+  bash_demo:
+    name: Запускаємо в Bash
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: bash testing/5_lab/action.sh
+
+  python_demo:
+    name: Запускаємо через Python
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - run: python testing/1_lab/src/lab1/game.py
+      - name: Send greeting
+        if: github.event_name == 'workflow_dispatch' && inputs.name != 'Executer'
+        env:
+          EXECUTER_NAME: ${{ inputs.name }}
+        run: printf 'Привіт, %s!\n' "$EXECUTER_NAME"

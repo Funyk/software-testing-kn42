@@ -1,0 +1,33 @@
+$ poetry run pytest --collect-only
+
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0
+rootdir: <проєкт>
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 17 items
+
+<Dir software-testing-kn42>
+  <Package example>
+    <Package testing>
+      <Package 02_pytest>
+        <Module test_app.py>
+          <Function test_triangle_type>
+          <Function test_allowed_figure[\u043a\u0432\u0430\u0434\u0440\u0430\u0442]>
+          <Function test_allowed_figure[\u043f\u0440\u044f\u043c\u043e\u043a\u0443\u0442\u043d\u0438\u043a]>
+          <Function test_allowed_figure[\u0442\u0440\u0438\u043a\u0443\u0442\u043d\u0438\u043a]>
+          <Function test_square_length>
+          <Function test_invalid_figure>
+          <Function test_disallowed_types[\u043a\u043e\u043b\u043e]>
+          <Function test_disallowed_types[]>
+          <Function test_disallowed_types[None]>
+          <Function test_invalid_lengths[0]>
+          <Function test_invalid_lengths[-1]>
+          <Function test_invalid_lengths[-10]>
+          <Function test_non_numeric_lengths[3]>
+          <Function test_non_numeric_lengths[None]>
+          <Function test_non_numeric_lengths[length2]>
+          <Function test_fixture_contains_three_figures>
+          <Function test_fixture_contains_rectangle>
+
+========================= 17 tests collected in 0.02s ==========================

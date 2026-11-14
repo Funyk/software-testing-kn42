@@ -1,0 +1,17 @@
+$ poetry run python -m unittest -v test.TestFigure.test_figure_length
+
+test_figure_length (test.TestFigure.test_figure_length) ... FAIL
+
+======================================================================
+FAIL: test_figure_length (test.TestFigure.test_figure_length)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<робочі матеріали>/experiments/length/test.py", line 20, in test_figure_length
+    self.assertEqual(5, self.obj.get_figure_length)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 'квадрат'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (failures=1)

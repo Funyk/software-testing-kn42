@@ -1,0 +1,10 @@
+$ poetry run coverage report -m
+
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+src/lab3/branch.py       12      0      6      0   100%
+src/lab3/handler.py       5      0      0      0   100%
+src/lab3/main.py          5      0      0      0   100%
+src/lab3/new.py          13      0      0      0   100%
+-----------------------------------------------------------------
+TOTAL                    35      0      6      0   100%

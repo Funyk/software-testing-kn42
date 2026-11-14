@@ -1,0 +1,53 @@
+test_card_game (tests.test_game_unittest.TestCardGameInitialization.test_card_game)
+Перевірка створення об'єкта CardGame та глобальних атрибутів класу. ... ok
+test_object_attributes (tests.test_game_unittest.TestCardGameInitialization.test_object_attributes)
+Перевірка наявності атрибутів об'єкта CardGame. ... ok
+test_object_attributes_types (tests.test_game_unittest.TestCardGameInitialization.test_object_attributes_types)
+Перевірка типів атрибутів об'єкта CardGame. ... ok
+test_object_attributes_values (tests.test_game_unittest.TestCardGameInitialization.test_object_attributes_values)
+Показати похибку при обчисленні ... ok
+test_object_attributes_with_assetrs (tests.test_game_unittest.TestCardGameInitialization.test_object_attributes_with_assetrs)
+Перевірка атрибутів об'єкта CardGame з використанням assert. ... ok
+test_hit_another_card (tests.test_game_unittest.TestCardGameMethods.test_hit_another_card)
+Перевірка методу hit_another_card. ... ok
+test_example_with_input (tests.test_game_unittest.TestCardGameWithRaisers.test_example_with_input)
+Перевірка методу example_with_input. ... ok
+test_incorrect_interraction (tests.test_game_unittest.TestCardGameWithRaisers.test_incorrect_interraction)
+Перевірка методу incorrect_interraction. ... ok
+test_negative_float_rejected_as_type_error (tests.test_game_unittest.TestCardGameWithRaisers.test_negative_float_rejected_as_type_error) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK
+
+=== Виконується setUpClass ===
+
+--- Виконується setUp ---
+!!!Тестуємо!!!
+--- Виконується tearDown ---
+
+
+--- Виконується setUp ---
+--- Виконується tearDown ---
+
+
+--- Виконується setUp ---
+--- Виконується tearDown ---
+
+
+--- Виконується setUp ---
+--- Виконується tearDown ---
+
+
+--- Виконується setUp ---
+--- Виконується tearDown ---
+
+=== Виконується tearDownClass ===
+
+
+Ice Golem нанесла Flame Dragon удар 9.
+    Ice Golem здоровя: 20
+    Flame Dragon здоров'я: 22
+Ми можемо атакувати лише інші карти!
+Ви ввели число: 5

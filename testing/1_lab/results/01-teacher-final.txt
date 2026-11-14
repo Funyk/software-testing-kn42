@@ -1,0 +1,14 @@
+test_angle_counts_for_all_types (__main__.TestFigure.test_angle_counts_for_all_types) ... ok
+test_figure_length (__main__.TestFigure.test_figure_length) ... ok
+test_figure_type (__main__.TestFigure.test_figure_type) ... ok
+test_invalid_figure (__main__.TestFigure.test_invalid_figure) ... ok
+test_invalid_length (__main__.TestFigure.test_invalid_length) ... ok
+test_negative_length (__main__.TestFigure.test_negative_length) ... ok
+test_incorrect_input (__main__.TestValidation.test_incorrect_input) ... ok
+test_positive_input (__main__.TestValidation.test_positive_input) ... ok
+test_vowels (__main__.TestValidation.test_vowels) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

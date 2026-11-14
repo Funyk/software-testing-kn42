@@ -28,6 +28,7 @@ poetry run python test.py
 poetry run python -m unittest -v
 
 # Окремий запуск матеріалів занять із testing/1_lab
+cd ../../../testing/1_lab
 PYTHONPATH=src poetry run python -m unittest tests.test_game_unittest -v
 ```
 

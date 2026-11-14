@@ -1,0 +1,36 @@
+$ poetry run pytest --cov=src/lab3 --cov-branch --cov-report=term-missing --cov-fail-under=90 -v
+
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <проєкт>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <проєкт>
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collecting ... collected 12 items
+
+src/lab3/test_test.py::test_example PASSED                               [  8%]
+tests/test_unittesting.py::TestNewFunction::test_branches_negative PASSED [ 16%]
+tests/test_unittesting.py::TestNewFunction::test_branches_positive PASSED [ 25%]
+tests/test_unittesting.py::TestNewFunction::test_branches_zero PASSED    [ 33%]
+tests/test_unittesting.py::TestNewFunction::test_handler_prints_start_and_finish PASSED [ 41%]
+tests/test_unittesting.py::TestNewFunction::test_if_only_branch PASSED   [ 50%]
+tests/test_unittesting.py::TestNewFunction::test_if_only_branch_non_positive PASSED [ 58%]
+tests/test_unittesting.py::TestNewFunction::test_main_combines_results PASSED [ 66%]
+tests/test_unittesting.py::TestNewFunction::test_missing_new_2_and_4 PASSED [ 75%]
+tests/test_unittesting.py::TestNewFunction::test_new_3 PASSED            [ 83%]
+tests/test_unittesting.py::TestNewFunction::test_new_function PASSED     [ 91%]
+tests/test_unittesting.py::TestNewFunction::test_new_none PASSED         [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.15-final-0 _______________
+
+Name                  Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------
+src/lab3/branch.py       12      0      6      0   100%
+src/lab3/handler.py       5      0      0      0   100%
+src/lab3/main.py          5      0      0      0   100%
+src/lab3/new.py          13      0      0      0   100%
+-----------------------------------------------------------------
+TOTAL                    35      0      6      0   100%
+Required test coverage of 90% reached. Total coverage: 100.00%
+============================== 12 passed in 0.10s ==============================

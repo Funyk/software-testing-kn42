@@ -1,0 +1,48 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <проєкт>/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <проєкт>
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collecting ... collected 38 items
+
+tests/regular_file_test.py::test_card_game_regular_file PASSED           [  2%]
+tests/test_classic.py::TestCardGame::test_hit_another_card PASSED        [  5%]
+tests/test_classic.py::TestCardGameWithPytest::test_hit_another_card PASSED [  7%]
+tests/test_different_fixtures.py::test_single_card_game_object_with_correct_attributes[Common] PASSED [ 10%]
+tests/test_different_fixtures.py::test_single_card_game_object_with_correct_attributes[Rare] PASSED [ 13%]
+tests/test_different_fixtures.py::test_single_card_game_object_with_correct_attributes[Epic] PASSED [ 15%]
+tests/test_different_fixtures.py::test_single_card_game_object_with_correct_attributes[Legendary] PASSED [ 18%]
+tests/test_different_fixtures.py::test_single_card_game_object_with_correct_attributes[Invalid] PASSED [ 21%]
+tests/test_different_fixtures.py::test_single_card_game_with_custom_prefix PASSED [ 23%]
+tests/test_different_fixtures.py::test_single_card_game_rarity_assignment[Common] PASSED [ 26%]
+tests/test_different_fixtures.py::test_single_card_game_rarity_assignment[Rare] PASSED [ 28%]
+tests/test_different_fixtures.py::test_single_card_game_rarity_assignment[Epic] PASSED [ 31%]
+tests/test_different_fixtures.py::test_single_card_game_rarity_assignment[Legendary] PASSED [ 34%]
+tests/test_different_fixtures.py::test_single_card_game_rarity_assignment[Invalid] PASSED [ 36%]
+tests/test_example.py::test_card_game_normal_example PASSED              [ 39%]
+tests/test_fixtures_scope.py::test_first_invoke PASSED                   [ 42%]
+tests/test_fixtures_scope.py::test_second_invoke PASSED                  [ 44%]
+tests/test_fixtures_scope.py::test_after_yield PASSED                    [ 47%]
+tests/test_fixtures_scope.py::test_third_invoke PASSED                   [ 50%]
+tests/test_fixtures_scope.py::test_fourth_invoke PASSED                  [ 52%]
+tests/test_fixtures_scope.py::test_pass SKIPPED (Цей тест пропускаєт...) [ 55%]
+tests/test_fixtures_scope.py::test_skipif PASSED                         [ 57%]
+tests/test_main.py::test_obj_incorrect_interraction_correct_return PASSED [ 60%]
+tests/test_main.py::test_obj_incorrect_interraction_value_error PASSED   [ 63%]
+tests/test_main.py::test_obj_incorrect_interraction_type_error PASSED    [ 65%]
+tests/test_parametrization.py::test_compare_input_arguments PASSED       [ 68%]
+tests/test_parametrization.py::test_compare_input_arguments_parametrized[5-3] PASSED [ 71%]
+tests/test_parametrization.py::test_compare_input_arguments_parametrized[-4--8] PASSED [ 73%]
+tests/test_parametrization.py::test_compare_input_arguments_parametrized[100-1] PASSED [ 76%]
+tests/test_parametrization.py::test_compare_input_arguments_parametrized[0--5] PASSED [ 78%]
+tests/test_parametrization.py::test_compare_input_arguments_equal[7-7] PASSED [ 81%]
+tests/test_parametrization.py::test_compare_input_arguments_equal[0-0] PASSED [ 84%]
+tests/test_parametrization.py::test_compare_input_arguments_equal[-5--5] PASSED [ 86%]
+tests/test_with_fixtures.py::test_incorrect_interraction_with_fixture PASSED [ 89%]
+tests/test_yield.py::test_single_card_game_object_attributes PASSED      [ 92%]
+tests/test_yield.py::test_single_card_game_yield_attributes PASSED       [ 94%]
+tests/test_yield.py::test_single_card_game_yield_increment PASSED        [ 97%]
+tests/test_yield.py::test_single_card_game_yield_test_origin PASSED      [100%]
+
+======================== 37 passed, 1 skipped in 6.10s =========================

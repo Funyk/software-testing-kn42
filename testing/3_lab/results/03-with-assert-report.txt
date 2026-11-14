@@ -1,0 +1,7 @@
+$ poetry run coverage report -m
+
+Name     Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------
+app.py      18      4      6      3    71%   13, 16, 20, 24
+----------------------------------------------------
+TOTAL       18      4      6      3    71%

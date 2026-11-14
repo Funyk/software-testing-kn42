@@ -1,0 +1,14 @@
+$ poetry run coverage run -m unittest discover -v
+
+test_invalid_length_raises_assertion_error (test_unittest.TestFigure.test_invalid_length_raises_assertion_error) ... ok
+test_invalid_type_raises_assertion_error (test_unittest.TestFigure.test_invalid_type_raises_assertion_error) ... ok
+test_rectangle_has_four_angles (test_unittest.TestFigure.test_rectangle_has_four_angles) ... ok
+test_square_has_four_angles (test_unittest.TestFigure.test_square_has_four_angles) ... ok
+test_triangle_has_three_angles (test_unittest.TestFigure.test_triangle_has_three_angles) ... ok
+test_unknown_type_uses_fallback (test_unittest.TestFigure.test_unknown_type_uses_fallback) ... ok
+test_main_displays_triangle_angles (test_unittest.TestProgram.test_main_displays_triangle_angles) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
