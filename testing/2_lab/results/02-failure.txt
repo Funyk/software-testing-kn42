@@ -4,6 +4,7 @@ $ poetry run pytest -x --tb=short -v
 platform linux -- Python 3.13.15, pytest-9.2.0, pluggy-1.7.0 -- <проєкт>/.venv/bin/python
 cachedir: .pytest_cache
 rootdir: <робочі матеріали>/experiments/pytest
+configfile: pytest.ini
 plugins: cov-7.1.0
 collecting ... collected 17 items
 
@@ -18,18 +19,10 @@ ______________________________ test_square_length ______________________________
 test_app.py:31: in test_square_length
     assert square.get_figure_length == 9
 E   assert 10 == 9
-E    +  where 10 = <app.Figure object at 0x7fca981a8640>.get_figure_length
-=============================== warnings summary ===============================
-test_app.py:19
-  <робочі матеріали>/experiments/pytest/test_app.py:19: PytestUnknownMarkWarning: Unknown pytest.mark.unit - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
-    @pytest.mark.unit
-
-test_app.py:29
-  <робочі матеріали>/experiments/pytest/test_app.py:29: PytestUnknownMarkWarning: Unknown pytest.mark.unit - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
-    @pytest.mark.unit
-
--- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+E    +  where 10 = <app.Figure object>.get_figure_length
 =========================== short test summary info ============================
 FAILED test_app.py::test_square_length - assert 10 == 9
 !!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
-=================== 1 failed, 4 passed, 2 warnings in 0.03s ====================
+========================= 1 failed, 4 passed in 0.04s ==========================
+
+Код завершення: 1

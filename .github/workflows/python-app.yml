@@ -29,8 +29,12 @@ jobs:
           python-version: '3.13'
       - name: Install dependencies
         run: |
-          python -m pip install poetry==2.5.1
+          python -m pip install poetry==2.5.1 flake8==7.3.0
           poetry install --no-interaction
+      - name: Lint with flake8
+        run: |
+          flake8 example testing --count --select=E9,F63,F7,F82 --show-source --statistics
+          flake8 example testing --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run Python
         run: python testing/1_lab/src/lab1/game.py
       - name: Test with pytest

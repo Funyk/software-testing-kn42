@@ -29,6 +29,7 @@ poetry run pytest -m unit -v
 poetry run pytest --collect-only
 
 # Із testing/2_lab
+cd ../../../testing/2_lab
 PYTHONPATH=src poetry run pytest -v
 ```
 

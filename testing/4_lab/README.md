@@ -21,15 +21,17 @@
 
 ```bash
 # Залежності в корені проєкту
+# Для початкового налаштування: poetry add flask && poetry add --group dev pytest
 poetry install
 
 # Із кореня проєкту
 poetry run pytest example/testing/04_integration_testing -v
+poetry run pytest example/testing/04_integration_testing/test_app.py::test_create_task -v
 poetry run pytest testing/4_lab/integration -v
 poetry run pytest -m integration -v
 ```
 
-Пройшли [11 тестів Flask](results/04-teacher.txt) і [7 групових тестів](results/04-group.txt). Юніт-тест `Student` перевіряє один об’єкт. Інтеграційні тести проходять від HTTP або об’єкта `Student` до фактичних даних у SQLite та файловому експорті, якщо він є частиною сценарію.
+Пройшли [11 тестів Flask](results/04-teacher.txt) і [7 групових тестів](results/04-group.txt). Окремо перевірено [створення завдання](results/04-teacher-single.txt). Юніт-тест `Student` перевіряє один об’єкт. Інтеграційні тести проходять від HTTP або об’єкта `Student` до фактичних даних у SQLite та файловому експорті, якщо він є частиною сценарію.
 
 ---
 
