@@ -9,7 +9,7 @@ on:
         required: true
         default: Executer
   schedule:
-    - cron: '57 1 * * 6'
+    - cron: '17 2 * * 6'
 
 permissions:
   contents: read
