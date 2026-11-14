@@ -26,7 +26,7 @@
 
 | Запуск | Результат |
 | --- | --- |
-| [Python application](https://github.com/Funyk/software-testing-kn42/actions/runs/43541828276) | 118 тестів і 12 підтестів пройдено. Один навчальний тест позначено `skip`. Окрема перевірка `app.py` показала 100% при порозі 90%. |
+| [Python application](https://github.com/Funyk/software-testing-kn42/actions/runs/43542647725) | Перевірка `flake8` пройшла без критичних помилок. Пройдено 118 тестів і 12 підтестів. Один навчальний тест позначено `skip`. Окрема перевірка `app.py` показала 100% при порозі 90%. |
 | [Ручний запуск з `name=Артем`](https://github.com/Funyk/software-testing-kn42/actions/runs/43541871473) | Завдання Bash і Python пройшли. Крок `Send greeting` вивів `Привіт, Артем!`. |
 
 Вираз `57 1 * * 6` перевірено в [CronTab Guru](https://crontab.guru/#57_1_*_*_6). Для GitHub Actions час у виразі задано в UTC. [Перевірка виразу](pictures/cron-expression.png).

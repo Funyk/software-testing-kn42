@@ -35,6 +35,8 @@ PYTHONPATH=src poetry run pytest -v
 
 У [прикладі Figure](results/02-teacher-final.txt) пройшло 17 тестів. У [груповому прикладі](results/02-group-final.txt) пройшло 37 тестів і один пропущено. Методи `unittest.TestCase` використовують `self.assertEqual` і життєвий цикл класу. У функціях pytest достатньо `assert`, а підготовлені дані передаються через аргументи-фікстури.
 
+![Вибір двох тестів за маркером unit](pictures/pytest-marker.png)
+
 ---
 
 ### Висновок

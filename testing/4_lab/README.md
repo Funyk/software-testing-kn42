@@ -33,6 +33,8 @@ poetry run pytest -m integration -v
 
 Пройшли [11 тестів Flask](results/04-teacher.txt) і [7 групових тестів](results/04-group.txt). Окремо перевірено [створення завдання](results/04-teacher-single.txt). Юніт-тест `Student` перевіряє один об’єкт. Інтеграційні тести проходять від HTTP або об’єкта `Student` до фактичних даних у SQLite та файловому експорті, якщо він є частиною сценарію.
 
+![Результат інтеграційних тестів Flask](pictures/flask-tests.png)
+
 ---
 
 ### Висновок

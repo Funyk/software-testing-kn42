@@ -34,6 +34,10 @@ PYTHONPATH=src poetry run python -m unittest tests.test_game_unittest -v
 
 Фінальний [запуск Figure і введення](results/01-teacher-final.txt) пройшов 9 тестів. [Автоматичне виявлення](results/01-discovery.txt) також пройшло 9 тестів. У груповому запуску пройшло 9 тестів.
 
+![Результат тесту до виправлення](pictures/unittest-before.png)
+
+![Результат тесту після виправлення](pictures/unittest-after.png)
+
 ---
 
 ### Висновок
